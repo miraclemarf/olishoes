@@ -13,7 +13,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -27,7 +27,6 @@
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=374107900364435&ev=PageView&noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
-
 </head>
 
 <body>
@@ -41,8 +40,13 @@
     <div class="links">
 
         <div class="links__item">
-            <a class="links__item links__item--promo" href="https://bit.ly/olishoes-wa" target="_blank"><img
+            <a id="contactButton" class="links__item links__item--promo" href="https://bit.ly/olishoes-wa" target="_blank"><img
                     src="./assets/whatsapp.png" alt="whatsapp" width="30" height="30">Pesan Sekarang</a>
+            <script>
+                document.getElementById('contactButton').addEventListener('click', function () {
+                    fbq('track', 'Contact');
+                }, false);
+            </script>
         </div>
         <div class="links__item">
             <a class="links__item links__item--alumni" href="https://www.instagram.com/olishoes.id/"
