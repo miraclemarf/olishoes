@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-image: url(./assets/images/imagelink2-min.png);
+  background-image: url(./2902348.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -21,19 +21,23 @@ body {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   max-width: 100%;
-  min-height: 100vh;
   height: auto;
   letter-spacing: 0.1em;
 }
 
 .logo {
-  width: 300px;
+  width: 125px;
+  border-radius: 50%;
+  margin:2em 0 5em; 
+  border: 4px solid #73e2a7;
 }
 
 h2 {
   color: #024873;
 }
-
+.links img{
+  margin-right: 8px;
+}
 .links__item {
   display: block;
   max-width: 550px;
@@ -46,7 +50,11 @@ h2 {
   transition: all 0.2s ease-in-out;
   color: black;
 }
-
+.links__item a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .links__item .links__item--alumni:hover {
   background-color: #fff;
 }
@@ -144,4 +152,9 @@ h2 {
 
 .channels__item:hover {
   transform: scale(1.5);
+}
+@media only screen and (max-width: 375px) {
+  .caption h4 {
+    font-size: 80%;
+  }
 }
